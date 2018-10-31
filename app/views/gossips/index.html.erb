@@ -1,0 +1,14 @@
+
+
+<div class="content"> 
+<div class="family">
+
+         <% @gossips.each do |x|%>
+    <div class="card form-group" style="width: 18rem;">
+    <div class="card-body">
+    <h5 class="card-title"><%= x.title %></h5>
+    <h6 class="card-title"><%= x.content %></h6>
+    
+    </div>
+  </div>
+  <% end %>

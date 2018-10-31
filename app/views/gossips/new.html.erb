@@ -1,0 +1,14 @@
+<div class="form-row">
+    <%= form_for @gossip, url: {action: "create"}, html: {class: "col-md-6"} do |f| %>
+        <div class="col-md-12 form-group">
+            <%= f.label "Your title"%>
+            <%= f.text_field :title, placeholder: 'Title', class: "form-control" %>
+         </br>
+          
+        <%= f.label "Your gossip"%>
+        <%= f.text_area :content, size: "30x3", placeholder: 'Tell me your gossip.', class: "form-control" %>
+      </br>
+        <%= f.submit "Valider", class: "btn btn-primary btn-lg btn-block" %>
+      </div>
+    <% end %>
+  </div>
