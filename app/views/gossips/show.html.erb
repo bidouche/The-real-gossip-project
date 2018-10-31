@@ -1,0 +1,15 @@
+<div class="content"> 
+<div class="family">
+
+        
+    <div class="card form-group" style="width: 30rem;">
+    <div class="card-body">
+    <h5 class="card-title"><%= @gossip.title %></h5>
+    <h6 class="card-title"><%= @gossip.content %></h6>
+    
+
+    <%= link_to "Edit the gossip", edit_gossip_path %>
+    <%= link_to 'Delete', @gossip, method: :delete %>
+    </div>
+  </div>
+ 
